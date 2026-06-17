@@ -1,5 +1,4 @@
-import "../styles/hiringProcess.css";
-
+import "../styles/HiringProcess.css";
 function HiringProcess() {
 
   const steps = [
