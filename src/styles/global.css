@@ -1,28 +1,10 @@
-@font-face{
-  font-family:"Lufga";
-  src:url("../assets/fonts/Lufga-Regular.ttf") format("truetype");
-  font-weight:400;
-}
-
-@font-face{
-  font-family:"Lufga";
-  src:url("../assets/fonts/Lufga-Medium.ttf") format("truetype");
-  font-weight:500;
-}
-
-@font-face{
-  font-family:"Lufga";
-  src:url("../assets/fonts/Lufga-Bold.ttf") format("truetype");
-  font-weight:700;
-}
-
 /* Reset */
 
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:"Lufga",sans-serif;
+  font-family:Inter, sans-serif;
 }
 
 :root{
@@ -41,7 +23,7 @@ body{
   background:#000;
   color:white;
   overflow-x:hidden;
-  font-family:"Lufga",sans-serif;
+  font-family:Inter, sans-serif;
 }
 
 /* Headings */
@@ -52,7 +34,7 @@ h3,
 h4,
 h5,
 h6{
-  font-family:"Lufga",sans-serif;
+  font-family:Inter, sans-serif;
   font-weight:700;
 }
 
@@ -62,7 +44,7 @@ p,
 span,
 a,
 li{
-  font-family:"Lufga",sans-serif;
+  font-family:Inter, sans-serif;
   font-weight:400;
 }
 
@@ -72,7 +54,7 @@ button,
 input,
 textarea,
 select{
-  font-family:"Lufga",sans-serif;
+  font-family:Inter, sans-serif;
 }
 
 /* Scroll Animation */
