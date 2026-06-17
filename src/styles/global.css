@@ -1,0 +1,109 @@
+@font-face{
+  font-family:"Lufga";
+  src:url("../assets/fonts/Lufga-Regular.ttf") format("truetype");
+  font-weight:400;
+}
+
+@font-face{
+  font-family:"Lufga";
+  src:url("../assets/fonts/Lufga-Medium.ttf") format("truetype");
+  font-weight:500;
+}
+
+@font-face{
+  font-family:"Lufga";
+  src:url("../assets/fonts/Lufga-Bold.ttf") format("truetype");
+  font-weight:700;
+}
+
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Lufga",sans-serif;
+}
+
+:root{
+  --primary:#22c55e;
+  --bg:#000;
+  --card:#111;
+  --text:#fff;
+  --secondary:#aeb6c7;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#000;
+  color:white;
+  overflow-x:hidden;
+  font-family:"Lufga",sans-serif;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family:"Lufga",sans-serif;
+  font-weight:700;
+}
+
+/* Text */
+
+p,
+span,
+a,
+li{
+  font-family:"Lufga",sans-serif;
+  font-weight:400;
+}
+
+/* Forms */
+
+button,
+input,
+textarea,
+select{
+  font-family:"Lufga",sans-serif;
+}
+
+/* Scroll Animation */
+
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+/* Custom Cursor Setup */
+
+body{
+  cursor:none;
+}
+
+a,
+button{
+  cursor:none;
+}

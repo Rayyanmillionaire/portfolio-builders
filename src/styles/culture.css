@@ -1,0 +1,75 @@
+.culture{
+  padding:120px 8%;
+  background:#000;
+}
+
+.culture-header{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 70px;
+}
+
+.culture-tag{
+  color:#22c55e;
+  font-size:.9rem;
+  font-weight:700;
+  letter-spacing:2px;
+}
+
+.culture-header h2{
+  font-size:3rem;
+  margin:20px 0;
+}
+
+.culture-header p{
+  color:#aeb6c7;
+  line-height:1.8;
+}
+
+.culture-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:25px;
+}
+
+.culture-card{
+  background:#111;
+
+  border:1px solid rgba(34,197,94,.15);
+
+  padding:35px;
+
+  border-radius:24px;
+
+  transition:.35s ease;
+}
+
+.culture-card:hover{
+
+  transform:
+  translateY(-10px);
+
+  border-color:#22c55e;
+
+  box-shadow:
+  0 0 20px rgba(34,197,94,.15),
+  0 0 40px rgba(34,197,94,.08);
+}
+
+.culture-icon{
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.culture-card h3{
+  color:#22c55e;
+  margin-bottom:15px;
+}
+
+.culture-card p{
+  color:#aeb6c7;
+  line-height:1.8;
+}
