@@ -4,22 +4,18 @@ function Culture() {
 
   const cultureCards = [
     {
-      icon:"🚀",
       title:"Live Projects",
       desc:"Work on meaningful projects that create real impact for students."
     },
     {
-      icon:"🎯",
       title:"Mentorship",
       desc:"Learn directly from experienced professionals and mentors."
     },
     {
-      icon:"💡",
       title:"Innovation",
       desc:"Experiment, build and bring new ideas to life."
     },
     {
-      icon:"🤝",
       title:"Collaboration",
       desc:"Work alongside passionate people who love solving problems."
     }
@@ -50,10 +46,11 @@ function Culture() {
       <div className="culture-grid">
 
         {cultureCards.map((card,index)=>(
+
           <div className="culture-card" key={index}>
 
-            <div className="culture-icon">
-              {card.icon}
+            <div className="culture-number">
+              0{index + 1}
             </div>
 
             <h3>{card.title}</h3>
@@ -61,6 +58,7 @@ function Culture() {
             <p>{card.desc}</p>
 
           </div>
+
         ))}
 
       </div>

@@ -42,6 +42,7 @@ function Careers() {
       <ApplyModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
+        position="General Application"
       />
     </>
   );

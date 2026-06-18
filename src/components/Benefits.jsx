@@ -4,32 +4,26 @@ function Benefits() {
 
   const benefits = [
     {
-      icon: "⏰",
       title: "Flexible Hours",
       desc: "Manage your work schedule with flexibility and balance."
     },
     {
-      icon: "🌍",
       title: "Remote Friendly",
       desc: "Work and collaborate from wherever you're most productive."
     },
     {
-      icon: "🎓",
       title: "Mentorship",
       desc: "Receive guidance from experienced mentors and professionals."
     },
     {
-      icon: "📈",
       title: "Career Growth",
       desc: "Develop practical skills through impactful projects."
     },
     {
-      icon: "🏆",
       title: "Recognition",
       desc: "Your efforts and contributions are celebrated."
     },
     {
-      icon: "🤝",
       title: "Networking",
       desc: "Build meaningful connections with peers and experts."
     }
@@ -57,11 +51,11 @@ function Benefits() {
 
       <div className="benefits-grid">
 
-        {benefits.map((benefit,index)=>(
+        {benefits.map((benefit, index) => (
           <div className="benefit-card" key={index}>
 
-            <div className="benefit-icon">
-              {benefit.icon}
+            <div className="benefit-number">
+              0{index + 1}
             </div>
 
             <h3>{benefit.title}</h3>

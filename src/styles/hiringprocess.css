@@ -1,23 +1,24 @@
 .hiring{
-  padding:120px 8% 60px;
+  padding:120px 8%;
   background:#050505;
 }
 
 .hiring-header{
   text-align:center;
   max-width:700px;
-  margin:0 auto 70px;
+  margin:0 auto 90px;
 }
 
 .hiring-tag{
   color:#22c55e;
-  font-size:.9rem;
+  font-size:.85rem;
   font-weight:700;
-  letter-spacing:2px;
+  letter-spacing:3px;
 }
 
 .hiring-header h2{
-  font-size:3rem;
+  font-size:clamp(2.5rem,5vw,4rem);
+  color:#fff;
   margin:20px 0;
 }
 
@@ -26,47 +27,101 @@
   line-height:1.8;
 }
 
+/* Timeline */
+
 .timeline{
-  display:grid;
-  grid-template-columns:
-  repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+  position:relative;
+
+  max-width:900px;
+  margin:auto;
+}
+
+.timeline::before{
+  content:"";
+
+  position:absolute;
+
+  left:40px;
+  top:0;
+  bottom:0;
+
+  width:2px;
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba(34,197,94,.2),
+    rgba(34,197,94,.8),
+    rgba(34,197,94,.2)
+  );
 }
 
 .timeline-card{
-  background:#111;
-  border:1px solid rgba(34,197,94,.15);
-  padding:35px;
+  position:relative;
+
+  margin-bottom:50px;
+  margin-left:100px;
+
+  padding:30px;
+
   border-radius:24px;
-  text-align:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(255,255,255,.04),
+    rgba(255,255,255,.015)
+  );
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,.08);
+
   transition:.35s ease;
 }
 
 .timeline-card:hover{
-  transform:translateY(-10px);
-  border-color:#22c55e;
+  transform:translateY(-6px);
+
+  border-color:
+  rgba(34,197,94,.25);
+
   box-shadow:
-    0 0 20px rgba(34,197,94,.15),
-    0 0 40px rgba(34,197,94,.08);
+  0 0 25px rgba(34,197,94,.12),
+  0 20px 50px rgba(0,0,0,.35);
 }
 
 .timeline-number{
-  width:80px;
-  height:80px;
-  margin:auto;
+  position:absolute;
+
+  left:-88px;
+  top:25px;
+
+  width:56px;
+  height:56px;
+
   border-radius:50%;
+
   background:#22c55e;
-  color:black;
-  font-size:1.3rem;
+  color:#000;
+
   font-weight:800;
+
   display:flex;
-  justify-content:center;
   align-items:center;
-  margin-bottom:25px;
+  justify-content:center;
+
+  box-shadow:
+  0 0 20px rgba(34,197,94,.35);
+
+  z-index:2;
 }
 
 .timeline-card h3{
-  margin-bottom:15px;
+  color:#fff;
+  font-size:1.3rem;
+  margin-bottom:12px;
 }
 
 .timeline-card p{
@@ -74,21 +129,34 @@
   line-height:1.8;
 }
 
+/* Mobile */
+
 @media(max-width:768px){
 
   .hiring{
-    padding:80px 5% 40px;
+    padding:90px 5%;
   }
 
   .hiring-header h2{
     font-size:2rem;
   }
 
-  .timeline{
-    gap:20px;
+  .timeline::before{
+    left:28px;
   }
 
   .timeline-card{
-    padding:25px;
+    margin-left:70px;
+    padding:24px;
   }
+
+  .timeline-number{
+    left:-58px;
+
+    width:42px;
+    height:42px;
+
+    font-size:.9rem;
+  }
+
 }

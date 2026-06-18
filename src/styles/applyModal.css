@@ -26,7 +26,10 @@
 
   overflow-y:auto;
 
-  background:#111;
+  background:rgba(17,17,17,.95);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
 
   border:1px solid rgba(34,197,94,.15);
 
@@ -37,6 +40,9 @@
   position:relative;
 
   animation:modalPop .35s ease;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.45);
 }
 
 /* Green Glow */
@@ -180,8 +186,18 @@
   0 0 0 3px rgba(34,197,94,.15);
 }
 
+.apply-form select{
+  cursor:pointer;
+}
+
+.apply-form option{
+  background:#111;
+  color:#fff;
+}
+
 .apply-form input[type="file"]{
   padding:12px;
+  cursor:pointer;
 }
 
 /* Submit Button */
@@ -246,12 +262,17 @@
   border-radius:20px;
 }
 
+.modal::-webkit-scrollbar-track{
+  background:transparent;
+}
+
 /* Mobile */
 
 @media(max-width:600px){
 
   .modal{
     padding:30px 20px;
+    border-radius:20px;
   }
 
   .modal h2{

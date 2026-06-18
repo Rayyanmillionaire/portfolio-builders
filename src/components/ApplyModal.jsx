@@ -4,8 +4,9 @@ import "../styles/applyModal.css";
 function ApplyModal({
   isOpen,
   onClose,
-  position = ""
+  position = "General Application"
 }) {
+
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") {
@@ -81,12 +82,30 @@ function ApplyModal({
             required
           />
 
-          <input
-            type="text"
-            value={position}
-            placeholder="Position"
-            readOnly
-          />
+          <select
+            defaultValue={position || "General Application"}
+            required
+          >
+            <option value="Frontend Developer Intern">
+              Frontend Developer Intern
+            </option>
+
+            <option value="UI/UX Designer Intern">
+              UI/UX Designer Intern
+            </option>
+
+            <option value="Digital Marketing Intern">
+              Digital Marketing Intern
+            </option>
+
+            <option value="Content Writer Intern">
+              Content Writer Intern
+            </option>
+
+            <option value="General Application">
+              General Application
+            </option>
+          </select>
 
           <textarea
             rows="4"

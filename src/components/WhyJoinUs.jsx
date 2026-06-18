@@ -4,22 +4,18 @@ function WhyJoinUs() {
 
   const items = [
     {
-      icon: "🚀",
       title: "Real Impact",
       desc: "Help thousands of students build successful careers."
     },
     {
-      icon: "📈",
       title: "Growth Culture",
       desc: "Learn continuously with mentors and teammates."
     },
     {
-      icon: "💡",
       title: "Innovation",
       desc: "Work on projects that solve real problems."
     },
     {
-      icon: "🤝",
       title: "Collaboration",
       desc: "Grow together with a supportive team."
     }
@@ -48,10 +44,11 @@ function WhyJoinUs() {
       <div className="why-grid">
 
         {items.map((item,index)=>(
+
           <div className="why-card" key={index}>
 
-            <div className="why-icon">
-              {item.icon}
+            <div className="why-number">
+              0{index + 1}
             </div>
 
             <h3>{item.title}</h3>
@@ -59,6 +56,7 @@ function WhyJoinUs() {
             <p>{item.desc}</p>
 
           </div>
+
         ))}
 
       </div>
